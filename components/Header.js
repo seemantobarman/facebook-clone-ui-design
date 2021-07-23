@@ -61,7 +61,9 @@ function Header() {
                     layout="fixed"
                 />
 
-                <p className="font-semibold pr-3 whitespace-nowrap">Seemanto</p>
+                <p className="font-semibold pr-3 whitespace-nowrap">
+                    {session.user.name}
+                </p>
                 <ViewGridIcon className="icon" />
                 <BellIcon className="icon" />
                 <ChevronDownIcon className="icon" />

@@ -2,6 +2,8 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Login from "../components/Login";
 import { getSession } from "next-auth/client";
+import Sidebar from "../components/Sidebar";
+import Feed from "../components/Feed";
 
 export default function Home(props) {
     const { session } = props;
@@ -18,6 +20,11 @@ export default function Home(props) {
 
             {/* Header Section */}
             <Header />
+
+            <main className="flex">
+                <Sidebar />
+                <Feed />
+            </main>
         </div>
     );
 }

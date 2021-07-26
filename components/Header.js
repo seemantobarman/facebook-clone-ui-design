@@ -20,7 +20,7 @@ import { signOut, useSession } from "next-auth/client";
 function Header() {
     const [session] = useSession();
     return (
-        <div className="sticky top-0 z-50 bg-white flex items-center p-2 lg:px-5 shadow-md overflow-hidden">
+        <div className="sticky w-screen top-0 z-50 bg-white flex items-center p-2 lg:px-5 shadow-md overflow-hidden">
             {/* Left */}
             <div className="flex items-center">
                 <Image
@@ -61,7 +61,7 @@ function Header() {
                     layout="fixed"
                 />
 
-                <p className="font-semibold pr-3 whitespace-nowrap">
+                <p className="font-semibold pr-3 whitespace-nowrap hidden lg:inline-flex">
                     {session.user.name}
                 </p>
                 <ViewGridIcon className="icon" />

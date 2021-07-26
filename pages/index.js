@@ -13,7 +13,7 @@ export default function Home(props) {
         return <Login />;
     }
     return (
-        <div>
+        <div className="bg-gray-100">
             <Head>
                 <title>Facebook 2.0</title>
             </Head>

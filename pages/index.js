@@ -13,7 +13,7 @@ export default function Home(props) {
         return <Login />;
     }
     return (
-        <div className="bg-gray-100">
+        <div className="h-screen bg-gray-100 overflow-hidden">
             <Head>
                 <title>Facebook 2.0</title>
             </Head>

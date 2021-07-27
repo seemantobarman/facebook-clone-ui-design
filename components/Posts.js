@@ -4,7 +4,7 @@ import Post from "./Post";
 
 function Posts() {
     const [realtimePosts, loading, error] = useCollection(
-        db.collection("posts")
+        db.collection("posts").orderBy("timestamp", "desc")
     );
 
     if (loading) {
